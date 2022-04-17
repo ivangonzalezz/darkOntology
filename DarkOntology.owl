@@ -1,0 +1,531 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#"
+     xml:base="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark">
+        <rdfs:comment>An ontology for Dark series domain</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasFather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasFather">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasParent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isFatherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasMother -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasMother">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasParent"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isMotherOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasOccupation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasOccupation">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isOccupedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasParent">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasSibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasSibling">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isSiblingOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isFatherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isFatherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isLivingAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isLivingAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isMemberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isMemberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#World"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isMotherOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isMotherOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isParentOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isOccupedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isOccupedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isParentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isParentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isSiblingOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isSiblingOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment>Age of the Character</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Episode"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment>Seconds of chapter length</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#AdamWorld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#AdamWorld">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#World"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isLivingAt"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasFather"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasMother"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasOccupation"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#isMemberOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#World"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Describes each Character of the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#CharlotteCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#CharlotteCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:comment>Charlotte Character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#ElisabethCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#ElisabethCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasMother"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#CharlotteCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Elisabeth Character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Episode -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Episode">
+        <rdfs:comment>Describes a chapter of the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#EvaWorld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#EvaWorld">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#World"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#JonasCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#JonasCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#MikkelCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Jonas Character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#MarthaCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#MarthaCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:comment>Martha Character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#MikkelCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#MikkelCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasFather"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#UlrichCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#hasSibling"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#MarthaCharacter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Mikkel Character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation">
+        <rdfs:comment>Profession of any Character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#OriginWorld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#OriginWorld">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#World"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#PoliceOccupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#PoliceOccupation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation"/>
+        <rdfs:comment>Police ocupation in the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#PriestOccupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#PriestOccupation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation"/>
+        <rdfs:comment>Priest ocupation in the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#ScientistOccupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#ScientistOccupation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation"/>
+        <rdfs:comment>Scientist ocupation in the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Season">
+        <rdfs:comment>Describes a season of the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#StudentOccupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#StudentOccupation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation"/>
+        <rdfs:comment>Student ocupation in the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#TeacherOccupation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#TeacherOccupation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Occupation"/>
+        <rdfs:comment>Teacher ocupation in the series</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#UlrichCharacter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#UlrichCharacter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Character"/>
+        <rdfs:comment>Ulrich Character</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#World -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#World">
+        <rdfs:comment>Describes the existence of different worlds in Dark environment</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year">
+        <rdfs:comment>Epochs of the timeline in Dark</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1921Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1921Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1953Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1953Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1986Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1986Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#2019Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#2019Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#2052Year -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#2052Year">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Year"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Charlotte1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Charlotte1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#CharlotteCharacter"/>
+        <isMotherOf rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Elisabeth1"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Elisabeth1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#Elisabeth1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#ElisabethCharacter"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</hasAge>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#AdamWorld"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#EvaWorld"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#OriginWorld"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#CharlotteCharacter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#ElisabethCharacter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#JonasCharacter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#MarthaCharacter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#MikkelCharacter"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#UlrichCharacter"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#PoliceOccupation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#PriestOccupation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#ScientistOccupation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#StudentOccupation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#TeacherOccupation"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1921Year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1953Year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1986Year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#2019Year"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1921Year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1953Year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#1986Year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#2019Year"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ivangonzalezz/ontologies/2022/3/Dark#2052Year"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
